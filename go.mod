@@ -2,7 +2,10 @@ module github.com/charlieplate/rdmate
 
 go 1.22.5
 
-require github.com/labstack/echo v3.3.10+incompatible
+require (
+	github.com/dlclark/regexp2 v1.11.4
+	github.com/labstack/echo v3.3.10+incompatible
+)
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
