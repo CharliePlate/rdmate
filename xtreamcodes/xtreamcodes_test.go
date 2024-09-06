@@ -18,10 +18,10 @@ var player_api = "player_api.php"
 
 func TestActions_NoneActionHandler(t *testing.T) {
 	type test struct {
+		expectedError  error
 		name           string
 		userInfo       xtreamcodes.UserInfo
 		serverInfo     xtreamcodes.ServerInfo
-		expectedError  error
 		expectedStatus int
 	}
 

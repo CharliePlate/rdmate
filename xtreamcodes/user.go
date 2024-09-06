@@ -12,7 +12,6 @@ type UserInfo struct {
 	Username             string   `json:"username"`
 	Password             string   `json:"password"`
 	Message              string   `json:"message"`
-	Auth                 int      `json:"auth"`
 	Status               string   `json:"status"`
 	ExpDate              string   `json:"exp_date"`
 	IsTrial              string   `json:"is_trial"`
@@ -20,20 +19,21 @@ type UserInfo struct {
 	CreatedAt            string   `json:"created_at"`
 	MaxConnections       string   `json:"max_connections"`
 	AllowedOutputFormats []string `json:"allowed_output_formats"`
+	Auth                 int      `json:"auth"`
 }
 
 type ServerInfo struct {
-	Xui            bool   `json:"xui"`
 	Version        string `json:"version"`
-	Revision       int    `json:"revision"`
 	URL            string `json:"url"`
 	Port           string `json:"port"`
 	HTTPSPort      string `json:"https_port"`
 	ServerProtocol string `json:"server_protocol"`
 	RtmpPort       string `json:"rtmp_port"`
-	TimestampNow   int    `json:"timestamp_now"`
 	TimeNow        string `json:"time_now"`
 	Timezone       string `json:"timezone"`
+	Revision       int    `json:"revision"`
+	TimestampNow   int    `json:"timestamp_now"`
+	Xui            bool   `json:"xui"`
 }
 
 type NoneActionResponse struct {
